@@ -5,7 +5,7 @@ Paper: https://arxiv.org/abs/2007.15217
 This is the official implementation for ECCV20 paper: Key Frame Proposal Network for Efficient Pose Estimation in Videos
 All implementations are based on Pytorch and up to date
 
-## ----Prerequires----
+## Prerequires
 
 python > 3.5
 
@@ -13,7 +13,7 @@ pytorch > 0.4.0
 
 cuda > cuda 9.0
 
-## ----Usage-----
+## Usage
 1. Downloading data:
  * Penn Action: http://dreamdragon.github.io/PennAction/
  * JHMDB:  http://jhmdb.is.tue.mpg.de/dataset 
@@ -32,7 +32,7 @@ cuda > cuda 9.0
       
 4. For more details of our dynamic-based dictionary, please refer: [DYAN](https://openaccess.thecvf.com/content_ECCV_2018/papers/Wenqian_Liu_DYAN_A_Dynamical_ECCV_2018_paper.pdf)
 
-## -----Details------
+## Details
 
 ### 1. Training: 
  * We provded training files for each of experiments
