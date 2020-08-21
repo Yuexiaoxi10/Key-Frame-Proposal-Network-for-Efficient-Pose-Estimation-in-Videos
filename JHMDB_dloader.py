@@ -75,6 +75,8 @@ def get_train_test_annotation(dataRoot):
 
 class jhmdbDataset(data.Dataset):
     def __init__(self, trainAnnot, testAnnot, T, split, if_occ):
+        # if_occ: occlusion ratio for robust comparison experiment
+        
         self.trainSet = trainAnnot[0:600]
         self.testSet = testAnnot
         self.valSet = trainAnnot[600:]
