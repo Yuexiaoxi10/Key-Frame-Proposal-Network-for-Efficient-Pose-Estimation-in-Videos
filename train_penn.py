@@ -82,7 +82,7 @@ Loss3 = []
 MSE = nn.MSELoss()
 
 print('start training:')
-alpha = 4
+a = 0.2  
 for epoch in range(1, Epoch+1):
     print('start training epoch:', epoch)
 
@@ -106,11 +106,11 @@ for epoch in range(1, Epoch+1):
 
             inputData = img_data.cuda(gpu_id)
 
-
+	    alpha = a*epoch   # you may need to tune a to find the best one
             feature, Dictionary,_ = net.forward(inputData)
             out = net.forward2(feature, alpha)
             # print('dict:', Dictionary.detach().cpu().numpy(), 'out:', out)
-
+		
             loss, l1, l2, l3 = minInverse_loss(out, Dictionary, feature, T, [2.5, 4.5], gpu_id, 'penn')
 
             loss.backward()
