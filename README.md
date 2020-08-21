@@ -14,14 +14,15 @@ pytorch > 0.4.0
 cuda > cuda 9.0
 
 ## ----Usage-----
-1. Downloading data: 1) Penn Action: http://dreamdragon.github.io/PennAction/
-                      2) JHMDB:  http://jhmdb.is.tue.mpg.de/dataset 
-                                 please refer [get bbox](https://github.com/lawy623/LSTM_Pose_Machines/blob/master/dataset/JHMDB/utils/getBox.m) to generate bbox for later use
+1. Downloading data:
+ * Penn Action: http://dreamdragon.github.io/PennAction/
+ * JHMDB:  http://jhmdb.is.tue.mpg.de/dataset 
+ * please refer [get bbox](https://github.com/lawy623/LSTM_Pose_Machines/blob/master/dataset/JHMDB/utils/getBox.m) to generate bbox for later use
 
-2. Downloading pre-train models: 1) We provided our best model for Penn Action, sub-JHMDB, and online updating experiments
-                                 2) Please download models: [GoogleDrive](https://drive.google.com/drive/folders/13q-UGXGLCwMXzCRX6CeOyQ12dJziGyxT?usp=sharing)     
-                                                             [OneDrive](https://1drv.ms/u/s!AgyTrG_BdJ9GbTjqlTuFDSERUfo?e=EnPzkG)                                                           
-                                 3) Please place models under folder 'models'
+2. Downloading pre-train models: 
+ * We provided our best model for Penn Action, sub-JHMDB, and online updating experiments
+ * Please download models: [GoogleDrive](https://drive.google.com/drive/folders/13q-UGXGLCwMXzCRX6CeOyQ12dJziGyxT?usp=sharing)[OneDrive](https://1drv.ms/u/s!AgyTrG_BdJ9GbTjqlTuFDSERUfo?e=EnPzkG)                                                           
+ * Please place models under folder 'models'
                                  
 ## NOTE: 
 1. Our demo code is implemented with our best model on validation set for each dataset 
@@ -33,12 +34,12 @@ cuda > cuda 9.0
 
 ## -----Details------
 
-1. Training: 
+### 1. Training: 
  * We provded training files for each of experiments
  * For training Penn Action and Sub-JHMDB: please not, parameter 'alpha' that we disscussed in our paper is linearly increasing with the training epoch, you may need to tune by yourself while training. 
  * For online updating experiment on sub-JHMDB: we used our best model as the backbone
              
-2. Testing: 
+### 2. Testing: 
  * We provded testing files for each of experiments, all results reported in Table 3,4,5 were based on the baseline, we directly applied their model on both Penn Action and sub-JHMDB dataset, no fine-tuning involved
  * Please refer[Our baseline](https://github.com/microsoft/human-pose-estimation.pytorch), we used architecture of '384x384_pose_resnet_101_d256d256d256' which trained on MPII     
  * You can find 'sampling comparison' experiment in 'test_penn.py', and 'robustness comparison' experiment in 'test_jhmdb.py'
