@@ -146,7 +146,7 @@ if __name__ == '__main__':
     dim = 15*2
     gpu_id = 2
 
-    dataRoot = '/data/Yuexi/JHMDB'
+    dataRoot = 'your data root'
     trainAnnot, testAnnot = get_train_test_annotation(dataRoot)
     testSet = jhmdbDataset(trainAnnot, testAnnot, T=T, split='val',if_occ=False)
     testloader = DataLoader(testSet, batch_size=1, shuffle=False, num_workers=4)
@@ -155,8 +155,8 @@ if __name__ == '__main__':
     Dictionary_pose = torch.Tensor(Data_to_use['Dictionary'])
     Dict_pose_use = Dictionary_pose[0:T, :]
 
-    modelPath = '/home/yuexi/Documents/keyframeModel/JHMDB/keyframePred'
-    modelFile = os.path.join(modelPath, '8.pth')
+    modelPath = './models'
+    modelFile = os.path.join(modelPath, 'kfpn_jhmdb_online.pth')
     state_dict = torch.load(modelFile)['state_dict']
     Drr = state_dict['K_FPN.Drr']
     Dtheta = state_dict['K_FPN.Dtheta']
