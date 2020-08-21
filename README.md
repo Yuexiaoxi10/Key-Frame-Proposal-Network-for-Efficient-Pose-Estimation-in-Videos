@@ -21,7 +21,7 @@ cuda > cuda 9.0
 
 2. Downloading pre-train models: 
  * We provided our best model for Penn Action, sub-JHMDB, and online updating experiments
- * Please download models: [GoogleDrive](https://drive.google.com/drive/folders/13q-UGXGLCwMXzCRX6CeOyQ12dJziGyxT?usp=sharing)[OneDrive](https://1drv.ms/u/s!AgyTrG_BdJ9GbTjqlTuFDSERUfo?e=EnPzkG)                                                           
+ * Please download models: [GoogleDrive](https://drive.google.com/drive/folders/13q-UGXGLCwMXzCRX6CeOyQ12dJziGyxT?usp=sharing)  [OneDrive](https://1drv.ms/u/s!AgyTrG_BdJ9GbTjqlTuFDSERUfo?e=EnPzkG)                                                           
  * Please place models under folder 'models'
                                  
 ## NOTE: 
