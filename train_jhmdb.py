@@ -71,7 +71,7 @@ scheduler = lr_scheduler.MultiStepLR(optimizer, milestones=[30, 50, 70], gamma=0
 # iteration = 1000
 batchSize = 1
 Epoch = 100
-alpha = 4
+a = 0.5 # alpha = a*epoch       
 if_plot = False
 if_val = True
 Loss = []
@@ -104,12 +104,13 @@ for epoch in range(1, Epoch+1):
         else:
             inputData = inputData
         feature, Dictionary, imgFeature = net.forward(inputData)
+	alpha = a*epoch
         out = net.forward2(feature, alpha)
         # print('dict:', Dictionary.detach().cpu().numpy(), 'out:', out)
 
         # skeleton_data = skeleton_to_use[num].squeeze(0).type(torch.FloatTensor).cuda(gpu_id)
-        loss, l1, l2, l3 = minInverse_loss(out, Dictionary, feature, T, [1, 5.5], gpu_id, 'jhmdb')
-        # loss_mse = MSE(feature, reconstFeature.reshape(feature.shape))   # next :[4 1.8]
+        loss, l1, l2, l3 = minInverse_loss(out, Dictionary, feature, T, [4, 2], gpu_id, 'jhmdb')
+        
 
         loss.backward()
 
