@@ -3,6 +3,7 @@
 Paper: https://arxiv.org/abs/2007.15217
 
 This is the official implementation for ECCV20 paper: Key Frame Proposal Network for Efficient Pose Estimation in Videos
+
 All implementations are based on Pytorch and up to date
 
 ## Prerequires
