@@ -7,11 +7,11 @@ All implementations are based on Pytorch and up to date
 
 ## Prerequires
 
-python > 3.5
+python = 3.5/3.6
 
-pytorch > 0.4.0
+pytorch >= 0.4.0
 
-cuda > cuda 9.0
+cuda >= cuda 9.0
 
 ## Usage
 1. Downloading data:
