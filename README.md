@@ -15,10 +15,8 @@ cuda > cuda 9.0
 
 # ----Usage-----
 1. Downloading data: 1) Penn Action: http://dreamdragon.github.io/PennAction/
-
-                      2) JHMDB: - http://jhmdb.is.tue.mpg.de/dataset 
-                     
-                                - please refer https://github.com/lawy623/LSTM_Pose_Machines/blob/master/dataset/JHMDB/utils/getBox.m to generate bbox for later use
+                      2) JHMDB:  http://jhmdb.is.tue.mpg.de/dataset 
+                                 please refer https://github.com/lawy623/LSTM_Pose_Machines/blob/master/dataset/JHMDB/utils/getBox.m to generate bbox for later use
 
 2. Downloading pre-train models: 1) We provided our best model for Penn Action, sub-JHMDB, and online updating experiments
                                  2) Please download models:  https://drive.google.com/drive/folders/13q-UGXGLCwMXzCRX6CeOyQ12dJziGyxT?usp=sharing [GoogleDrive]
