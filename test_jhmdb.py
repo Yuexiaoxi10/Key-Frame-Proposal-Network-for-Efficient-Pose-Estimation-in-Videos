@@ -176,7 +176,7 @@ if __name__ == '__main__':
     net.eval()
     alpha = 3  # alpha is linearly increasing with epoch while training
 
-    thresh = 0.992 # tunning threshhold to control number of keyframes you want to keep
+    thresh = 0.984 # tunning threshhold to control number of keyframes you want to keep
     test_val(net, testloader, alpha, thresh, Dictionary_pose.cuda(gpu_id), dataset_test, gpu_id)
 
 
