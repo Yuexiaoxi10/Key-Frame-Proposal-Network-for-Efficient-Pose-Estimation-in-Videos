@@ -46,7 +46,17 @@ cuda >= cuda 9.0
  * You can find 'sampling comparison' experiment in 'test_penn.py', and 'robustness comparison' experiment in 'test_jhmdb.py'
  * Note: set 'if_occ' is 'True' for doing 'robustness comparison' experiment, and you can change occlusion ratio by setting 'occRatio'
               
- 
+## Citation
+If you find this repo and our paper is useful, please consider to cite: 
+
+@inproceedings{k-fpn,
+  author = {Yuexi Zhang and Yin Wang and Octavia Camps and Mario Sznaier},
+  booktitle = {Proceedings of the European Conference on Computer Vision(ECCV)},
+  title = {Key {F}rame {P}roposal {N}etwork for {E}fficient {P}ose
+{E}stimation in {V}ideos},
+  year = {2020},
+  month = {August}
+}
  
 
 
