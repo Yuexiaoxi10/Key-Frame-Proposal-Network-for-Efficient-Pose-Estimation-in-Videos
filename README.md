@@ -58,6 +58,6 @@ If you find this repo and our paper is useful, please consider to cite:
   month = {August}
 }
  
-> Zhang,  Y.,  Wang,  Y.,  Camps,  O.,  Sznaier,  M.:  Key  Frame  Proposal  Network  forEfficient Pose Estimation in Videos. In: Proceedings of the European Conference onComputer Vision(ECCV) (August 2020)
+> Zhang,  Y.,  Wang,  Y.,  Camps,  O.,  Sznaier,  M.:  Key  Frame  Proposal  Network  forEfficient Pose Estimation in Videos. In: Proceedings of the European Conference on Computer Vision(ECCV) (August 2020)
 
 
